@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body {
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWNuMG5rc28wbzJ3bDdoanlueDQxYjV3a3NwYzhzeWZkcnI2cTFyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kKaVWUDkNq1hcPnzKe/giphy.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* CSS */
+.container {
+    padding-top: 100px; /* Jarak atas dari navbar */
+    padding-bottom: 100px; /* Jarak bawah dari konten */
+}
+
+.col-md-6 {
+    margin: left; /* Tengahkan konten di tengah halaman */
+}
+
+h1 {
+    font-family: capitalize;
+    font-weight: bold;
+    color: white;
+}
+
+h4, p {
+    color: #fff; /* Warna teks */
+}
+
+
+/* Atur gaya pada h1 */
+h1 {
+    font-family: 'Poetsen One', sans-serif; /* Ganti font family */
+    font-size: 40px; /* Atur ukuran font */
+    font-weight: bold;
+    color: white;
+}
+
+/* Atur gaya pada tombol */
+.btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 10px 20px; /* Atur padding tombol */
+    border-radius: 20px; /* Melengkungkan sudut tombol */
+    transition: all 0.3s ease; /* Animasi perubahan properti */
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: white;
+    border-color: black;
+    transform: scale(1.1); /* Perbesar tombol saat dihover */
+}
+
+.btn-outline-transparent {
+    background-color: transparent; /* Latar belakang transparan */
+    border: 2px solid #fff; /* Garis border putih */
+    color: #fff; /* Warna teks putih */
+    padding: 10px 20px; /* Atur padding tombol */
+    border-radius: 20px; /* Melengkungkan sudut tombol */
+}
+/* Atur gaya pada navbar */
+.navbar {
+    background-color: #000000c4;
+    padding: 10px 0;
+    height: 80px;
+}
+
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    color: #fff;
+    padding: .2rem 1rem;
+    transition: color 0.3s ease;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffffff; /* Warna teks */
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 70px #00bfff, 0 0 80px #00bfff, 0 0 100px #00bfff, 0 0 150px #00bfff; /* Efek neon */
+}
+
+/* Custom font for navbar */
+.navbar-nav .nav-link {
+    font-family: "Arial", cursive;
+    font-weight: bold; 
+
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: "Nabla", system-ui; 
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Style untuk footer */
+footer {
+    background-color: #000000c4; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 40px 0; /* Padding atas dan bawah */
+    margin-top: 80px
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    width: 30%; /* Lebar setiap kolom footer */
+}
+
+.footer-content h3 {
+    font-size: 18px; /* Ukuran judul */
+    margin-bottom: 15px; /* Jarak bawah judul */
+}
+
+.footer-content p {
+    font-size: 14px; /* Ukuran teks */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+
+.footer-bottom {
+    margin-top: 20px; /* Jarak atas footer bagian bawah */
+    text-align: center; /* Teks rata tengah */
+    padding-top: 10px; /* Padding atas */
+    border-top: 1px solid #666; /* Garis atas */
+    font-size: 14px; /* Ukuran teks */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: .2rem .5rem;
+    }
+
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .btn-outline-transparent {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        width: 45%; /* Lebar setiap kolom footer */
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        height: auto; /* Sesuaikan tinggi navbar */
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: .2rem .5rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        margin-top: 0;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .btn-outline-transparent {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .footer-content {
+        width: 100%; /* Lebar setiap kolom footer */
+        margin-bottom: 20px; /* Jarak bawah setiap kolom */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Susun kolom secara vertikal */
+        align-items: center; /* Pusatkan konten footer */
+    }
+}
